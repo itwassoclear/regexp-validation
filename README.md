@@ -5,6 +5,6 @@
 ## Задача
  - Реализовать валидацию полей с помощью регулярных выражений
 
-С готовой версией можно ознакомиться [здесь][1]. 
+С готовым проектом v0.0.2 можно ознакомиться [здесь][1]. 
 
-[1]: https://github.com/itwassoclear.github.io/regexp-validation
+[1]: https://itwassoclear.github.io/regexp-validation/
