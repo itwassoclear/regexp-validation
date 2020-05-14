@@ -24,15 +24,15 @@
                         <span class="form__error">только кириллица, с большой буквы: Сокровище</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="text" name="email" pattern="^[a-zA-Z0-9-\._]+@[a-zA-Z0-9-\._]+?\.[a-z]{2,6}$" placeholder="E-Mail" required/>
+                        <input class="form__input" type="text" name="email" pattern="^([a-z]{1})(\.?[a-z0-9_-]+)*@[a-zA-Z0-9-\._]+?\.[a-z]{2,6}$" placeholder="E-Mail" required/>
                         <span class="form__error">e-mail в формате: students-yandex@yandex.ru</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="text" name="tel" placeholder="Телефон" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" minlength="11" maxlength="18" required/>
+                        <input class="form__input" type="text" name="tel" placeholder="Телефон" pattern="^\+?\d{1} ?(\(\d{3}\)|\d{3})[\- ]?\d{3}-?\d{2}-?\d{2}$" minlength="11" maxlength="18" required/>
                         <span class="form__error">Недопустимый формат номера</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="text" name="url" pattern="^(https?:\/\/)(www\.)?(((\d{1,3}\.){3}\d{1,3})|((\w+)((-\w+)+)?\.\w{2,6}))((\.\w+)+)?(:\d{2,5})?((\/+\w+)+#?)?$" placeholder="Ваш сайт" required/>
+                        <input class="form__input" type="text" name="url" pattern="^(http(s)?:\/\/(www)?(\.)?)([0-9a-z-_]+).[a-z]{2,6}((:\d{1,5})?)((\/){1}([a-z0-9])+)*(\/)?(#)?|^(http(s)?:\/\/)(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})((:\d{1,5})?)((\/){1}([a-z0-9])+)*(\/)?(#)?$" placeholder="Ваш сайт" required/>
                         <span class="form__error">URL в формате: http://mysite.ru</span>
                     </div>
                     <button class="form__button" type="text">Отправить</button>
